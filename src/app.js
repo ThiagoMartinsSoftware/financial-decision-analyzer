@@ -13,7 +13,7 @@ app.use(express.json());
 app.use('/api', simulacaoRoutes);
 
 // 3. Servir arquivos estáticos (CSS, JS do front, Imagens)
-const publicPath = path.join(__dirname, '..', 'frontend');
+const publicPath = path.join(__dirname, '..', 'public');
 app.use(express.static(publicPath));
 
 
